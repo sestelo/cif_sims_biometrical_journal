@@ -1,19 +1,18 @@
 ## R code for the manuscript "A method for determining groups in cumulative incidence curves in competing risk data" (Marta Sestelo, Luís Meira-Machado, Nora M. Villanueva  and Javier Roca-Pardiñas)
-Code was written Marta Sestelo
-In case of questions or comments please contact sestelo@uvigo.es
 
-The data and simulation results that support the findings of this study are openly available at: [(https://github.com/sestelo/cif_sims_biometrical_journal/)](https://github.com/sestelo/cif_sims_biometrical_journal/)
+Code was written Marta Sestelo. In case of questions or comments please contact <sestelo@uvigo.es>
+
 
 This GitHub repository contains all the routines required to reproduce the simulation, tables, figures and application to real data of the paper entitled “A method for determining groups in cumulative incidence curves in competing risk data”. The repository is structured in five folders: 01_code_sims, 02_outpus_sims, 03_tables, 04_figures and 05_app_data.
 
-In order to run the cited routines, it is needed to install the clustcurv package from GitHub (CIF branch). At this moment, the package on CRAN does not contain this methodology. The code for install the version from GitHub is:
+In order to run the cited routines, it is needed to install the clustcurv package from GitHub (CIF branch). At this moment, the package on CRAN does not contain this methodology. The code for installing the version from GitHub is:
 
 ```library(devtools)
 install_github("noramvillanueva/clustcurv", ref = "CIF")```
 
-It is important to mention that the code of de simulations (01_code_sims folder) is written to be runned in a server using a job array file .sh. In our case, we use the Finisterrae III - https://www.cesga.es/en/infrastructures/computing/).
+It is important to mention that the code of de simulations (01_code_sims folder) is written to be run in a server using a job array file .sh. In our case, we use the Finisterrae III - https://www.cesga.es/en/infrastructures/computing/).
 
-Note also that the .sh file of each experiment contains the code using the kmeans algorithm. If you want to simulate and test with the kmedians algorithm you have to change this input parameter. 
+Note also that the .sh file of each experiment contains the code using the K-means algorithm. If you want to simulate and test with the K-medians algorithm you have to change this input parameter. 
 
 
 
