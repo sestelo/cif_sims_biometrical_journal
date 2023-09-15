@@ -1,4 +1,4 @@
-# R code for the manuscript "A method for determining groups in cumulative incidence curves in competing risk data" (Marta Sestelo, Luís Meira-Machado, Nora M. Villanueva  and Javier Roca-Pardiñas)
+## R code for the manuscript "A method for determining groups in cumulative incidence curves in competing risk data" (Marta Sestelo, Luís Meira-Machado, Nora M. Villanueva  and Javier Roca-Pardiñas)
 Code was written Marta Sestelo
 In case of questions or comments please contact sestelo@uvigo.es
 
