@@ -53,7 +53,7 @@ for (cenval in c(40, 20)){
   data2 <- data[data$cen == cenval, ]
   for (nval in c(500, 1000, 1500)){
     i <- i + 1
-    datan <- data2[data2$n == nval, ]
+    datan <- data2[data2$n == nval & data2$a != 0.5, ]
     
     plot_data <- reshape2::melt(datan, id.var = c("n", "a", "cen"))
     p[[i]] <- ggplot2::ggplot(plot_data, aes(x = a, y = value, group = variable, shape = variable, colour = variable, lty = variable)) +
@@ -74,7 +74,7 @@ for (cenval in c(40, 20)){
                           labels=c(expression('D'[CM]), expression('D'[KS]))) +
       geom_hline(yintercept = 0.05, col = "red") +
       ylab("Power") +
-      xlab("a")
+      xlab("a") + ylim(c(0, 1))
     
   }
 }
